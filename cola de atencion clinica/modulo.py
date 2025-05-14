@@ -47,5 +47,5 @@ class Cola_de_atencion:
             print("Pacientes en la cola:")
             actual = self.frente
             while actual:
-                    print(actual.dato, end=", ")
+                    print(actual.dato)
                     actual = actual.siguiente
