@@ -52,5 +52,5 @@ class Cola_de_atencion:
             print("Pacientes en la cola:")
             actual = self.frente
             while actual:
-                    print(f"Nombre: {actual.dato.nombre}, servicio: {actual.dato.tipo_servicio}",  end=" - ")
+                    print(f"Nombre: {actual.dato.nombre}, servicio: {actual.dato.tipo_servicio}")
                     actual = actual.siguiente

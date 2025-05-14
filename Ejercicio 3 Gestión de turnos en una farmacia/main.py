@@ -24,7 +24,13 @@ def main():
         if opcion == '1':
             #registra un nuevo paciente
             nombre = input("Ingrese el nombre del paciente: ")
-            tipo_servicio = input("Ingrese el tipo de servicio (compra, consulta, receta): ")
+            #validacion
+            while True:
+                tipo_servicio = input("Ingrese el tipo de servicio (compra, consulta, receta): ").lower()
+                if tipo_servicio in ["compra", "consulta", "receta"]:
+                    break
+                else:
+                    print("Tipo de servicio no válido. Por favor, ingrese 'compra', 'consulta' o 'receta'.")
             # Llama al método registro para agregar el paciente
             cola.registro(nombre, tipo_servicio)
         elif opcion == '2':
